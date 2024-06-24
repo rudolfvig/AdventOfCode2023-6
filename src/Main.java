@@ -27,7 +27,7 @@ public class Main {
         int resultOfProblem = 1;
         for (Race race : races){
             resultOfProblem *= race.getAllBetterPossibilities();
-            System.out.println("Better possibilities: "+ race.getAllBetterPossibilities());
+            //System.out.println("Better possibilities: "+ race.getAllBetterPossibilities());
         }
         System.out.println("result: " + resultOfProblem);
 

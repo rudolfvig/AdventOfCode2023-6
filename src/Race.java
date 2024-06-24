@@ -15,7 +15,7 @@ public class Race {
         // -recordPushTime^2 + time*recordPushTime - recordDistance = 0
         // better possibilities = abs(x1 - x2) - 2
         double[] roots = calculateQuadraticRoots(-1, (double)time, -(double)recordDistance);
-        System.out.println("Roots: " + roots[0] + ", " + roots[1]);
+        //System.out.println("Roots: " + roots[0] + ", " + roots[1]);
         return abs( (long)Math.ceil(roots[0]) - (long)Math.floor(roots[1]) ) + 1 ;
     }
 
