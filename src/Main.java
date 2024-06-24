@@ -7,9 +7,11 @@ public class Main {
         HashMap<Integer, Integer> racePossibilities = new HashMap<>();
         for (int i = 0; i <= length; i++) {
             System.out.println("distance traveled in powered " + i + ": " + (length - i) * i);
-            racePossibilities.put(i, length - i);
+            racePossibilities.put(i, (length - i) * i);
         }
-        
-
+        int count = (int) racePossibilities.values().stream()
+                .filter(value -> value > length)
+                .count();
+        System.out.println(count);
     }
 }
